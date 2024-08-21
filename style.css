@@ -1,0 +1,203 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.wallpapersafari.com/37/72/inwOe2.jpg') no-repeat center center fixed; /* Imagen de textura metálica */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url('https://th.bing.com/th/id/OIP.k3pU0gAP-4aI9vsiYbfRGgHaEo?rs=1&pid=ImgDetMain'); /* Cambia esto por la URL de tu imagen de fondo */
+    position: relative;
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+}
+
+.banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Asegura que la imagen de fondo esté detrás del logo */
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 200px;
+    z-index: 2; /* Asegura que el logo esté sobre la imagen de fondo */
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+main {
+    padding: 2rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.intro h1 {
+    color: #eaedf0;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.animated-text {
+    font-size: 2.3rem;
+    color: #f0f2f5;
+    animation: textAnimation 3s ease-out forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carousel {
+    margin-bottom: 2rem;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Asegura que el caption esté posicionado relativo a la diapositiva */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn i {
+    margin-right: 0.5rem;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-youtube {
+    background-color: #ff0000;
+}
+
+.btn-instagram {
+    background-color: #e4405f;
+}
+
+.btn-facebook {
+    background-color: #1877f2;
+}
+
+.btn-youtube:hover {
+    background-color: #cc0000;
+}
+
+.btn-instagram:hover {
+    background-color: #d7366f;
+}
+
+.btn-facebook:hover {
+    background-color: #165eab;
+}
+
+footer {
+    background-image: url('https://th.bing.com/th/id/OIP.k3pU0gAP-4aI9vsiYbfRGgHaEo?rs=1&pid=ImgDetMain'); /* Cambia esto por la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fffcfc;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
